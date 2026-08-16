@@ -88,7 +88,7 @@ npm run build
 ## 📬 Contact Arij Chowdhury
 
 - 📧 **Email**: [arij.chowdhuryr@gmail.com](mailto:arij.chowdhuryr@gmail.com)
-- 📞 **Phone**: [+91 9901412827](tel:+91**********)
+- 📞 **Phone**: [+91 9901412827](tel:+91 **********)
 - 📍 **Location**: Bengaluru, Karnataka, India (Open to Remote & Relocation)
 - 🔗 **LinkedIn**: [linkedin.com/in/arij-chowdhury-96ab3b261](https://in.linkedin.com/in/arij-chowdhury-96ab3b261)
 - 🐙 **GitHub**: [github.com/Arijdev](https://github.com/Arijdev)
