@@ -47,31 +47,38 @@ export default function Navbar() {
 
   return (
     <header className={`head navigation ${isMenuActive ? "active" : ""} ${isSticky ? "sticky" : ""}`}>
-      <a href="/#home" className="brand">
+      <a href="/#home" className="brand" onClick={closeMenu}>
         <span className="brand-accent">&lt;</span>ARIJ<span className="brand-accent"> /&gt;</span>
       </a>
 
-      <div className="nav-actions-mobile">
+      <div className="header-right-actions">
+        {/* Unified Single Theme Button */}
         <button onClick={toggleTheme} className="theme-toggle-btn" aria-label="Toggle Theme">
           <i className={theme === "dark" ? "fas fa-sun" : "fas fa-moon"}></i>
+          <span className="theme-btn-text">{theme === "dark" ? "Light" : "Dark"}</span>
         </button>
 
-        <div className={`menu-btn ${isMenuActive ? "active" : ""}`} onClick={toggleMenu}>
+        {/* Hamburger Menu Toggle Icon for Mobile */}
+        <div className={`menu-btn ${isMenuActive ? "active" : ""}`} onClick={toggleMenu} aria-label="Toggle Navigation Menu">
           <i className={isMenuActive ? "fas fa-times" : "fas fa-bars"}></i>
         </div>
       </div>
 
+      {/* Navigation Drawer Menu */}
       <div className={`navigation-menu ${isMenuActive ? "active" : ""}`}>
+        {/* Mobile Header with Close Button */}
+        <div className="mobile-menu-header">
+          <span className="mobile-menu-title">Navigation</span>
+          <button className="mobile-close-btn" onClick={closeMenu} aria-label="Close Mobile Menu">
+            <i className="fas fa-times"></i>
+          </button>
+        </div>
+
         {NavLinks.map((item, i) => (
           <a href={item.href} onClick={closeMenu} key={i} className="nav-item-link">
             {item.name}
           </a>
         ))}
-        
-        <button onClick={toggleTheme} className="theme-toggle-btn desktop-theme-btn" aria-label="Toggle Theme">
-          <i className={theme === "dark" ? "fas fa-sun" : "fas fa-moon"}></i>
-          <span>{theme === "dark" ? "Light Mode" : "Dark Mode"}</span>
-        </button>
 
         <a href="/#contact" onClick={closeMenu} className="nav-hire-btn">
           <i className="fas fa-briefcase"></i> Hire Me
