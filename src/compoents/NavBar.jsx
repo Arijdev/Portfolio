@@ -13,6 +13,14 @@ const NavLinks = [
 export default function Navbar() {
   const [isMenuActive, setIsMenuActive] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
+  const [theme, setTheme] = useState(() => {
+    return localStorage.getItem("theme") || "dark";
+  });
+
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+    localStorage.setItem("theme", theme);
+  }, [theme]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,6 +32,10 @@ export default function Navbar() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  const toggleTheme = () => {
+    setTheme((prevTheme) => (prevTheme === "dark" ? "light" : "dark"));
+  };
 
   const toggleMenu = () => {
     setIsMenuActive(!isMenuActive);
@@ -39,8 +51,14 @@ export default function Navbar() {
         <span className="brand-accent">&lt;</span>ARIJ<span className="brand-accent"> /&gt;</span>
       </a>
 
-      <div className={`menu-btn ${isMenuActive ? "active" : ""}`} onClick={toggleMenu}>
-        <i className={isMenuActive ? "fas fa-times" : "fas fa-bars"}></i>
+      <div className="nav-actions-mobile">
+        <button onClick={toggleTheme} className="theme-toggle-btn" aria-label="Toggle Theme">
+          <i className={theme === "dark" ? "fas fa-sun" : "fas fa-moon"}></i>
+        </button>
+
+        <div className={`menu-btn ${isMenuActive ? "active" : ""}`} onClick={toggleMenu}>
+          <i className={isMenuActive ? "fas fa-times" : "fas fa-bars"}></i>
+        </div>
       </div>
 
       <div className={`navigation-menu ${isMenuActive ? "active" : ""}`}>
@@ -49,6 +67,12 @@ export default function Navbar() {
             {item.name}
           </a>
         ))}
+        
+        <button onClick={toggleTheme} className="theme-toggle-btn desktop-theme-btn" aria-label="Toggle Theme">
+          <i className={theme === "dark" ? "fas fa-sun" : "fas fa-moon"}></i>
+          <span>{theme === "dark" ? "Light Mode" : "Dark Mode"}</span>
+        </button>
+
         <a href="/#contact" onClick={closeMenu} className="nav-hire-btn">
           <i className="fas fa-briefcase"></i> Hire Me
         </a>

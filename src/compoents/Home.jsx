@@ -1,9 +1,19 @@
 import React from 'react';
 import resume from '../assets/images/ArijResume.pdf';
+import bgImg from '../assets/images/bg.jpg';
 
 export default function Home() {
   return (
-    <section className="main" id="home">
+    <section 
+      className="main" 
+      id="home"
+      style={{
+        backgroundImage: `var(--hero-overlay), url(${bgImg})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
+    >
       <div className="home-overlay"></div>
       <div className="content">
         <div className="location-pill">
