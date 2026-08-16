@@ -18,9 +18,6 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import LoginPage from './compoents/Loginpage.jsx';
 import SignUpPage from './compoents/SignUpPage.jsx';
 import ForgotPasswordPage from './compoents/ForgotPasswordPage.jsx';
-import Voicetype from './compoents/VoiceTyping.jsx';
-import Digitalbord from './compoents/DigitalBord.jsx';
-import DigitalSkatch from './compoents/DigitalSketch.jsx';
 import Tictactoe from './compoents/Tictactoe.jsx';
 
 function App() {
@@ -50,9 +47,6 @@ function App() {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/sign-up" element={<SignUpPage />} />
         <Route path="/forgot-password" element={<ForgotPasswordPage />} />
-        <Route path="/voicetyping" element={<><Voicetype /><Footer /></>}/>
-        <Route path="/Digitalnote" element={<><Digitalbord /><Footer /></>}/>
-        <Route path="/DigitalSkatch" element={<><DigitalSkatch /><Footer /></>}/>
       </Routes>
     </Router>
   );
