@@ -10,9 +10,9 @@ import sketch from "../assets/images/sketchbord.png";
 import screen4 from "../assets/images/Screenshot 2023-11-03 115733.jpg";
 import airoast from "../assets/images/airoast.jpg";
 import mystery from "../assets/images/mystery.png";
-import work1 from "../assets/images/work1.jpg";
-import work2 from "../assets/images/work2.jpg";
-import work3 from "../assets/images/work3.jpg";
+import work1 from "../assets/images/work1.png";
+import work2 from "../assets/images/work2.png";
+import work3 from "../assets/images/work3.png";
 
 const PROJECTS_DATA = [
   {
