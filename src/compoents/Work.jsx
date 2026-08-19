@@ -9,6 +9,7 @@ import note from "../assets/images/note.png";
 import sketch from "../assets/images/sketchbord.png";
 import screen4 from "../assets/images/Screenshot 2023-11-03 115733.jpg";
 import airoast from "../assets/images/airoast.jpg";
+import cc from "../assets/images/Screenshot1.png";
 import mystery from "../assets/images/mystery.png";
 import acdelicious from "../assets/images/acdelicious.png";
 import work1 from "../assets/images/work1.png";
@@ -58,6 +59,17 @@ const PROJECTS_DATA = [
     tech: ["LangChain", "RAG", "FAISS", "Express.js", "Next.js", "Python"],
     isFeatured: true
   },
+
+  {
+    title: "ComplianceAI",
+    category: "Agentic AI Systems",
+    image: cc,
+    badge: "AI Agent",
+    github: "https://github.com/Arijdev/ComplianceAI",
+    description: "Enterprise-grade AI compliance and contract review system. Upload PDF/DOCX contracts to get AI-powered clause risk analysis, semantic rule grounding via ChromaDB, real-time live trace via SSE, and exportable audit reports. Supports GPT-4o, Claude, Gemini & offline mode.",
+    tech: ["React.js", "FastAPI", "LangGraph", "ChromaDB", "MongoDB", "Tailwind CSS"],
+    isFeatured: false,
+  },
   {
     title: "Zero-Day Guard (Malware Detection XAI)",
     category: "Agentic AI Systems",
@@ -79,6 +91,7 @@ const PROJECTS_DATA = [
     tech: ["React.js", "AI API", "Node.js", "Tailwind CSS", "Vercel"],
     isFeatured: false
   },
+
   {
     title: "VoxScribe Studio",
     category: "AI Tools & Utilities",

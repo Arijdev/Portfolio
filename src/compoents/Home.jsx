@@ -4,8 +4,8 @@ import bgImg from '../assets/images/bg.jpg';
 
 export default function Home() {
   return (
-    <section 
-      className="main" 
+    <section
+      className="main"
       id="home"
       style={{
         backgroundImage: `var(--hero-overlay), url(${bgImg})`,
@@ -22,7 +22,7 @@ export default function Home() {
         </div>
 
         <h2>Hello, I'm<br /><span>Arij Chowdhury</span></h2>
-        
+
         <div className="animated-text">
           <h3>Agentic AI Developer</h3>
           <h3>Full Stack Developer (Next.js & MERN)</h3>
@@ -30,8 +30,8 @@ export default function Home() {
         </div>
 
         <p className="hero-description">
-          Results-driven Software Engineer with hands-on experience building scalable Next.js & MERN web applications, 
-          autonomous AI agents using <b>LangGraph, LangChain, RAG, Deep Agents, and vector databases</b>. 
+          Results-driven Software Engineer with hands-on experience building scalable Next.js & MERN web applications,
+          autonomous AI agents using <b>LangGraph, LangChain, RAG, Deep Agents, and vector databases</b>.
           Scored <b>8.45/10 CGPA</b> in B.Tech IT & Ranked <b>2832 Globally in TCS CodeVita</b>.
         </p>
 
