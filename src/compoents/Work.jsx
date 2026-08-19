@@ -5,6 +5,7 @@ import screen1 from "../assets/images/Screenshot 2023-11-03 102927.jpg";
 import screen2 from "../assets/images/Screenshot.png";
 import screen3 from "../assets/images/Screenshot 2023-11-03 115113.jpg";
 import voice from "../assets/images/voice.png";
+import recruitment from "../assets/images/recruitment.png";
 import note from "../assets/images/note.png";
 import sketch from "../assets/images/sketchbord.png";
 import screen4 from "../assets/images/Screenshot 2023-11-03 115733.jpg";
@@ -90,6 +91,17 @@ const PROJECTS_DATA = [
     description: "AI-powered roasting web app where users upload photos or text prompts to receive humorous AI roasts. Includes authentication, dashboard, roast history, multiple languages, and custom styling.",
     tech: ["React.js", "AI API", "Node.js", "Tailwind CSS", "Vercel"],
     isFeatured: false
+  },
+  {
+    title: "NextRecruit",
+    category: "Full Stack Web Apps",
+    image: recruitment, // Make sure to import or update the screenshot variable if needed
+    badge: "Job Apply Portal",
+    github: "https://github.com/Arijdev/NextRecruit",
+    link: "https://recruitment-chi-orcin.vercel.app/",
+    description: "A Next-Gen Recruitment Platform modern, highly interactive job board platform featuring dynamic company profiles, a responsive glassmorphism UI, and Cloudinary integration for secure resume uploads.",
+    tech: ["Next.js", "MongoDB", "Cloudinary", "CSS Modules"],
+    isFeatured: true
   },
 
   {

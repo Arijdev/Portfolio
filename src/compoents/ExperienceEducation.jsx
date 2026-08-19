@@ -27,7 +27,7 @@ export default function ExperienceEducation() {
                 <h5>Codtech IT Solutions Pvt. Ltd.</h5>
                 <ul className="experience-bullets">
                   <li>
-                    <i className="fas fa-check-circle"></i> Engineered 2 production-grade multi-page web applications using <b>Next.js</b> with modular component architecture and REST API integration.
+                    <i className="fas fa-check-circle"></i> Engineered 2 production-grade multi-page web applications using<b>Next.js</b>with modular component architecture and REST API integration.
                   </li>
                   <li>
                     <i className="fas fa-check-circle"></i> Optimized web performance using lazy loading, image optimization, and efficient state management, reducing page load time by ~<b>30%</b>.
