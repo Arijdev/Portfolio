@@ -158,15 +158,7 @@ const PROJECTS_DATA = [
     tech: ["React.js", "CSS Glassmorphism", "Router"],
     isFeatured: false
   },
-  {
-    title: "Multi-Language Translator",
-    category: "AI Tools & Utilities",
-    image: screen3,
-    badge: "Translation Tool",
-    description: "Web-based language translator converting text across multiple languages using API integration, featuring text-to-speech support.",
-    tech: ["JavaScript", "Translation API", "React.js"],
-    isFeatured: false
-  },
+
   {
     title: "Dynamic Calendar & Live Clock",
     category: "AI Tools & Utilities",
