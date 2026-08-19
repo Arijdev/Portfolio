@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import screen1 from "../assets/images/Screenshot 2023-11-03 102927.jpg";
-import screen2 from "../assets/images/Screenshot 2023-11-03 105538.jpg";
+import screen2 from "../assets/images/Screenshot.png";
 import screen3 from "../assets/images/Screenshot 2023-11-03 115113.jpg";
 import voice from "../assets/images/voice.png";
 import note from "../assets/images/note.png";
@@ -10,9 +10,11 @@ import sketch from "../assets/images/sketchbord.png";
 import screen4 from "../assets/images/Screenshot 2023-11-03 115733.jpg";
 import airoast from "../assets/images/airoast.jpg";
 import mystery from "../assets/images/mystery.png";
+import acdelicious from "../assets/images/acdelicious.png";
 import work1 from "../assets/images/work1.png";
 import work2 from "../assets/images/work2.png";
 import work3 from "../assets/images/work3.png";
+import work4 from "../assets/images/work4.png";
 
 const PROJECTS_DATA = [
   {
@@ -44,6 +46,16 @@ const PROJECTS_DATA = [
     link: "https://mystery-boxes-ashen.vercel.app/",
     description: "Developed a scalable e-commerce platform using Next.js, Node.js, MongoDB, and REST APIs, implementing secure authentication, responsive UI, product and order management, and optimized frontend-backend integration.",
     tech: ["Next.js", "Node.js", "MongoDB", "Express.js", "REST APIs", "Tailwind CSS"],
+    isFeatured: true
+  },
+  {
+    title: "Enterprise Document Intelligence Agent",
+    category: "Agentic AI Systems",
+    image: work4,
+    badge: "Enterprise AI / RAG",
+    github: "https://github.com/Arijdev/Enterprise_Document_Intelligence_Agent-RAG-",
+    description: "Enterprise Document Intelligence Agent built with LangChain, integrating RAG, vector stores, and conversational AI agents for intelligent document analysis and insights, with an Express.js backend and Next.js frontend.",
+    tech: ["LangChain", "RAG", "FAISS", "Express.js", "Next.js", "Python"],
     isFeatured: true
   },
   {
@@ -101,6 +113,29 @@ const PROJECTS_DATA = [
     isFeatured: false
   },
   {
+    title: "Arcade Hub",
+    category: "AI Tools & Utilities",
+    image: screen2,
+    badge: "Web Game center",
+    github: "https://github.com/Arijdev/Arcade_Hub",
+    link: "https://arcade-hub-delta.vercel.app/",
+    description: "A Next.js-based arcade game hub that combines a classic gaming interface with modern web technologies. Users can play multiple games, track high scores, and enjoy a responsive design with dynamic theme support.",
+    tech: ["Next.js", "Tailwind CSS", "Vercel"],
+    isFeatured: false
+  },
+  {
+    title: "AC Delicious",
+    category: "Full Stack Web Apps",
+    image: acdelicious,
+    badge: "Full Stack Web Apps",
+    github: "https://github.com/Arijdev/ACDelicious",
+    link: "https://ac-delicious.vercel.app/",
+    description: "AC Delicious is a responsive landing page for a fictional restaurant, featuring sections for menu, chefs, testimonials, gallery, and contact. It uses React, Vite, and Tailwind CSS to deliver a modern and interactive user experience.",
+    tech: ["React.js", "vite", "Tailwind CSS", "Vercel"],
+    isFeatured: false
+  },
+
+  {
     title: "Glassmorphic Auth System",
     category: "Full Stack Web Apps",
     image: screen1,
@@ -108,16 +143,6 @@ const PROJECTS_DATA = [
     route: "/login",
     description: "Modern glassmorphism authentication interface with responsive design, social logins, password recovery flows, and client validation.",
     tech: ["React.js", "CSS Glassmorphism", "Router"],
-    isFeatured: false
-  },
-  {
-    title: "Interactive Tic-Tac-Toe Game",
-    category: "AI Tools & Utilities",
-    image: screen2,
-    badge: "Web Game",
-    route: "/tictactoe",
-    description: "Interactive game featuring real-time win detection algorithms, score tracking, turn indicators, and responsive gameplay.",
-    tech: ["React.js", "JavaScript Logic", "CSS3"],
     isFeatured: false
   },
   {
