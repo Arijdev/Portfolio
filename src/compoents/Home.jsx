@@ -46,7 +46,7 @@ export default function Home() {
             <span className="stat-label">TCS CodeVita Rank</span>
           </div>
           <div className="stat-box">
-            <span className="stat-number">10+</span>
+            <span className="stat-number">15+</span>
             <span className="stat-label">Projects Built</span>
           </div>
           <div className="stat-box">

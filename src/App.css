@@ -34,7 +34,7 @@
   --header-bg: rgba(248, 250, 252, 0.85);
   --header-sticky: rgba(248, 250, 252, 0.95);
   --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  --hero-overlay: linear-gradient(rgba(213, 240, 240, 0.671), rgba(168, 217, 172, 0.8));
+  --hero-overlay: linear-gradient(rgba(207, 241, 106, 0.671), rgba(208, 234, 210, 0.8));
 }
 
 * {
